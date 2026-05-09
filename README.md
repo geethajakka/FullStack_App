@@ -21,10 +21,14 @@ For Nexus Server we install Docker
 sudo apt install docker.io -y
 we run the command for the nexus download docker image and create container out of it
 sudo docker run -d -p 8081:8081 sonatype/nexus3
+
 Having Host port and container port here host port can change but conatiner port cannot change
+
 sudo docker ps
 Docker container for nexus is created
+
 To get Accessing Nexus Server we login with username as admin and for password we get into adminpassword file inside the container so we run command
+
 sudo docker exec -it containerid /bin/bash
 cd sonatype-work/
 cd nexus3/
